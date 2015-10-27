@@ -14,6 +14,7 @@ ActiveAdmin.register Product do
 # end
   filter :name
   filter :purchased_date
+  filter :created_at
 
   form do |f|
     f.semantic_errors *f.object.errors.keys
